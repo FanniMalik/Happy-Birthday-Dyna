@@ -553,7 +553,7 @@ document.getElementById("another").addEventListener("click", nextCompliment);
 
 /* ---------- the friendship pact ---------- */
 document.getElementById("pactQ").textContent =
-  CONFIG.niceName + ", do you accept my extremely silly friendship for one more year?";
+  CONFIG.niceName + ", will you please accept my extremely silly friendship for lifetime?";
 document.getElementById("acceptedBody").innerHTML =
   CONFIG.friendshipMessage.split("\n\n").map(t => {
     const p = document.createElement("p"); p.textContent = t; return p.outerHTML;
@@ -564,9 +564,9 @@ const warn = document.getElementById("warn");
 const verdict = document.getElementById("verdict");
 const accepted = document.getElementById("accepted");
 const NO_STEPS = [
-  { say: "I said don't click No. Try again.",                              warn: "I did warn you" },
-  { say: "I don't think you can see Yes. Let me make the button bigger.",  warn: "look how big Yes is now" },
-  { say: "Still No? Fine, then No gets smaller. Consequences.",            warn: "it's shrinking" },
+  { say: "I said don't click ( No ). OKAY, try again.",                    warn: "I did warn you" },
+  { say: "I think you can't see ( Yes ). Let me make the bigger for you.", warn: "look how big Yes is now" },
+  { say: "Still No? Fine, then ( No ) gets smaller. Consequences.",        warn: "it's shrinking" },
   { say: "It's basically a crumb now. You're really committed to this.",   warn: "barely there" },
   { say: "Seriously? Now you have only one option left.",                  warn: "you're welcome" }
 ];
